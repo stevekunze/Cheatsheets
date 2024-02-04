@@ -4,7 +4,7 @@
 | restic -r */path/to/repo/* backup */path/to/data/that* --compression=max | backup files to repo with max compression | 
 | restic -r */path/to/repo* check | check health status of repo | 
 | restic -r /path/to/repo snapshots | list snapshots | 
-| restic -r /path/to/repo ls snpashot id | lists all files of the specified snaphots (use | less or redirect to a file for better readability)
+| restic -r /path/to/repo ls snpashot_id | lists all files of the specified snaphots (use | less or redirect to a file for better readability)
 
 
 
