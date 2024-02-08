@@ -6,14 +6,13 @@
 | restic -r /path/to/repo snapshots | list snapshots | 
 | restic -r /path/to/repo ls snpashot_id | lists all files of the specified snaphots (use | less or redirect to a file for better readability)
 
-
-
 # personal cheatsheet
 
 These are commands that I use on my personal server and/or clients
 Feel free to use them as a reference and modify them to your liking 
 
- after adding an alias run the following command: `exec .zshrc`
+> [!NOTE]
+> after adding an alias run the following command: `exec .zshrc`
 
 | command| discritption|
 | --------|------------|
