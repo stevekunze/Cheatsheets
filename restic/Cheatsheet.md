@@ -13,6 +13,8 @@
 These are commands that I use on my personal server and/or clients
 Feel free to use them as a reference and modify them to your liking 
 
+> after adding an alias run the following command: `exec .zshrc`
+
 | command| discritption|
 | --------|------------|
 | restic -r /media/steve/Volume/restic-nas-backup/ backup /mnt/truenasshare/ --compression=max --tag created_on_popos | backup entire nas to locally connected usb hdd on my pop os machine.|
