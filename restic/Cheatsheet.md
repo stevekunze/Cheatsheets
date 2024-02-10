@@ -1,6 +1,7 @@
 # general cheatsheet
 | command | discription |
 | ---- | ---- |
+| restic init -r */path/to/repo/* | initialize restic repository on in desired path |
 | restic -r */path/to/repo/* backup */path/to/data/that* --compression=max | backup files to repo with max compression | 
 | restic -r */path/to/repo* check | check health status of repo | 
 | restic -r */path/to/repo* snapshots | list snapshots | 
