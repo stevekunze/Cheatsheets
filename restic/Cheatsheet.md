@@ -18,8 +18,9 @@ Feel free to use them as a reference and modify them to your liking
 | restic -r sftp:hsb:Restic-Backup-Nextcloud --password-file /home/admin/.restic-hetzner-file backup /mnt/truenasshare/ --compression=max | backup entire nas to hetzner cloud with max compression and .ssh/config and password file for restic-repo authorization|
 | restic -r sftp://u1234-sub1@1234.your-storagebox.de:/Restic-Backup-Nextcloud --verbose --password-file /home/admin/.restic-hetzner-file backup /mnt/truenasshare/ --compression=max | backup entire nas to hetzner cloud with max compression and manuel specification of user and target . Using password file for restic-repo authorization 
 | restic -r sftp:hsb:Restic-Backup-Nextcloud --password-file /home/admin/.restic-hetzner-file forget --keep-daily 14 --keep-weekly 4 --keep-monthly 6  --keep-yearly 1 --prune | apply prune rule to hetzner restic repo and use the specified password file | 
-| restic -r /media/steve/Volume/restic-nas-backup/ backup /mnt/truenasshare/ --compression=max --tag created_on_popos
-# Aliases 
+| restic -r /media/steve/Volume/restic-nas-backup/ backup /mnt/truenasshare/ --compression=max --tag created_on_popos | 
+| restic -r /media/steve/0448707248706478 --password-file /home/steve/restic/.restic-sdcard-file backup /home/steve --exclude-file "/home/steve/restic/exclude.txt" --host "steve-home-pop" | place txt file with unwanted files and folder in specified directory 
+#  Aliases 
 | Name | Command | host |
 | ---- | ---- | ---- |
 | backup | alias backup='restic -r sftp:hsb:Restic-Backup-Nextcloud --password-file /home/admin/.restic-hetzner-file backup /mnt/truenasshare/ --compression=max' | restic.local
