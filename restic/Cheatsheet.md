@@ -21,12 +21,12 @@ Feel free to use them as a reference and modify them to your liking
 | restic -r /media/steve/Volume/restic-nas-backup/ backup /mnt/truenasshare/ --compression=max --tag created_on_popos | 
 | restic -r /media/steve/0448707248706478 --password-file /home/steve/restic/.restic-sdcard-file backup /home/steve --exclude-file "/home/steve/restic/exclude.txt" --host "steve-home-pop" | place txt file with unwanted files and folder in specified directory 
 
-#  Aliases 
+# aliases 
 | Name | Command | host |
 | ---- | ---- | ---- |
-| backup | restic -r sftp:hsb:Restic-Backup-Nextcloud --password-file /home/admin/.restic-hetzner-file backup /mnt/truenasshare/ --compression=max' | restic.local
-| backup_health_check | restic -r sftp:hsb:Restic-Backup-Nextcloud --password-file /home/admin/.restic-hetzner-file check --read-data' | restic.local
-| backup_fast_check | restic -r sftp:hsb:Restic-Backup-Nextcloud --password-file /home/admin/.restic-hetzner-file check' | restic.local 
+| backup | restic -r sftp:hsb:Restic-Backup-Nextcloud --password-file /home/admin/.restic-hetzner-file backup /mnt/truenasshare/ --compression=max | restic.local
+| backup_health_check | restic -r sftp:hsb:Restic-Backup-Nextcloud --password-file /home/admin/.restic-hetzner-file check --read-data | restic.local
+| backup_fast_check | restic -r sftp:hsb:Restic-Backup-Nextcloud --password-file /home/admin/.restic-hetzner-file check | restic.local 
 | backup_snapshots | restic -r sftp:hsb:Restic-Backup-Nextcloud --password-file /home/admin/.restic-hetzner-file snapshots' | restic.local 
 | nastohdd | restic -r /media/steve/680A3AAE105C9078/nasbackup backup /home/steve/truenasshare --compression=max | pop os client | 
 | hometosdcard | restic -r /media/steve/0448707248706478 --password-file /home/steve/restic/.restic-sdcard-file backup /home/steve --exclude-file "/home/steve/restic/exclude.txt" --host "steve-home-pop" | pop os client |
